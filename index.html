@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <style>
+        h1 {
+            color: red;
+        }
+        
+        div {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+        }
+        
+        input {
+            margin-bottom: 32px;
+        }
+    </style>
+</head>
+
+<script>
+    function clickBotao() {
+        alert('Bem vindo, ' + document.getElementById('nome').value);
+    }
+</script>
+
+<body>
+    <h1>Olá Mundo</h1>
+    <h2>Ola mundo cabeçalho nivel 2</h2>
+    <p>Tag de paragrafo padrão</p>
+
+    <div>
+        <label for="nome">Nome:</label>
+        <input id="nome">
+    </div>
+    <div>
+        <label for="data">Data de Nascimento:</label>
+        <input id="data">
+    </div>
+    <div>
+        <label for="rg">RG:</label>
+        <input id="rg">
+    </div>
+    <div>
+        <label for="nacionalidade">Nacionalidade:</label>
+        <input id="nacionalidade">
+    </div>
+    <div>
+        <label for="endereco">Endereço:</label>
+        <input id="endereco">
+    </div>
+
+    <div>
+        <button type="button" onclick="clickBotao()">Cadastro</button>
+    </div>
+</body>
+
+</html>
